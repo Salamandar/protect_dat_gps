@@ -18,7 +18,7 @@ module gps() {
     rounded(gps_length, gps_thick);
 }
 
-split_clearance = 0.2;
+split_clearance = 0.05;
 topbot_thick = 4;
 ext_thick = gps_thick + 4;
 mid_thick_int = gps_thick + 2 - split_clearance/2;
@@ -61,7 +61,7 @@ module fullBox() {
 }
 
 module displayBox() {
-//     box_bot_real();
+    box_bot_real();
     rotate([180, 0, 0])
     translate([40, 0, -gps_length])
     box_top_real();
